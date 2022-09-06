@@ -16,8 +16,10 @@ void main() {
 
   // List - ordered array of dart
   List<int> myList = [1, 2, 3];
+  myList.add(34);
   var mySecondList = ["one", "two", "three"];
   var list2 = [0, ...myList]; // spred operator
+  var list3 = [0, 2, 3, if (isOpen) 9]; // if collection
 
   print(list2);
 
