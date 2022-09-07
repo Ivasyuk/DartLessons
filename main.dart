@@ -20,8 +20,24 @@ void main() {
   var mySecondList = ["one", "two", "three"];
   var list2 = [0, ...myList]; // spred operator
   var list3 = [0, 2, 3, if (isOpen) 9]; // if collection
+  var list4 = [0, 1, 2,
+    for(var i in list3) i*10
+   ];
 
-  print(list2);
+  print(list3);
 
-  print("Hello World");
+  // Sets unordered collection of uniqye itrms
+  Set<String> mySet = {'Audio', 'Bmw', 'Ford'};
+
+// Maps key value
+  Map<int, String> products = {1: "iPod", 2: "iPhone"};
+  var products1 = {1: "iPod", 2: "iPhone"};
+
+var myMap = new Map();
+myMap['one'] = 1;
+myMap['two'] = 2;
+ print(myMap);
 }
+
+
+
